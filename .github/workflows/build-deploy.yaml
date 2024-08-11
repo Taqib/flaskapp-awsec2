@@ -10,7 +10,7 @@ on:
   workflow_dispatch:  # Allows the workflow to be manually triggered from the GitHub UI
 
 env:
-  AWS_REGION: "ap-south-1"
+  AWS_REGION: "us-east-1"
   AWS_EC2: "docker-ec2-instance"
   ECR_REPO: "docker-flask"
   GIT_SHA: ${{ github.sha }}
