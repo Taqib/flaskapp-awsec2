@@ -1,13 +1,13 @@
 name: Build and Push Docker Image to ECR
 
 on:
-   push:
-     paths:
-       - 'Src/*'  # Trigger only when Python files change inside the src folder
-       - 'Dockerfile' 
-     branches:
-       - main
-  workflow_dispatch:
+  push:
+    paths:
+      - 'Src/*'  # Trigger only when Python files change inside the src folder
+      - 'Dockerfile'
+    branches:
+      - main
+  workflow_dispatch:  # Allows the workflow to be manually triggered from the GitHub UI
 
 env:
   AWS_REGION: "ap-south-1"
